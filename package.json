@@ -1,11 +1,11 @@
 {
   "name": "senke-raptor",
   "private": true,
-  "version": "5.0.0",
-  "scripts": {
-    "deploy": "wrangler deploy"
-  },
+  "version": "7.0.0",
   "devDependencies": {
     "wrangler": "^4.68.0"
+  },
+  "scripts": {
+    "deploy": "wrangler deploy"
   }
 }
