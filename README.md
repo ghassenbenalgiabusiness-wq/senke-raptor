@@ -1,10 +1,11 @@
-# Senke Raptor — Cloudflare D1
-Cloudflare Worker + D1. The frontend is embedded in `worker.js`, so no `public/` folder is required for GitHub mobile upload.
+# Senke Raptor V5 — Map + Entretien
 
-## Deploy
-1. Import this GitHub repository into Cloudflare Workers.
-2. Deploy with `npx wrangler deploy`.
-3. In Worker Settings → Bindings, add D1:
-   - Variable name: `DB`
-   - Database: `senke-raptor`
-4. Test `/api/health`.
+- Carte Tunisie avec Leaflet/OpenStreetMap
+- 1er clic = départ, 2e clic = destination
+- Route et distance automatiques
+- Calcul carburant/coût selon 14 L et 3.2 L/100 km
+- Historique trajets et lieux visités dans D1
+- Entretien : vidange, chaîne, freins, pneus, filtre, bougie, batterie, kit chaîne
+- Chaque « fait » est enregistré dans l'historique D1
+- Binding Cloudflare : `DB` → `senke-raptor`
+- Pas de Supabase / Neon / Lovable
